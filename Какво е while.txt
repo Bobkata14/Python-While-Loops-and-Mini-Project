@@ -1,0 +1,243 @@
+What is `while`?
+
+The basic idea is:
+
+"As long as this condition is True, execute this code."
+
+Example:
+
+number = 1
+
+while number <= 5:
+print(number)
+number += 1
+
+Result:
+
+1
+2
+3
+4
+5
+
+Here:
+
+number <= 5 → the condition
+print(number) → what to repeat
+number += 1 → we change the value so that the condition can eventually become False
+
+⚠️ Very important: if you never change the value so that the condition becomes False, you might end up with an infinite loop.
+
+🟢 Level 1 — Basics
+Exercise 1 — Numbers from 1 to 10
+
+Write a program that uses `while` and prints:
+
+1
+2
+3
+...
+10
+
+Constraint: Do not use `for`.
+
+Exercise 2 — Countdown
+
+Create a program that prints:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+Then:
+
+Start!
+
+💡 Here, you need to realize that instead of `+= 1`, you will need something else.
+
+Exercise 3 — Even numbers
+
+Use `while` to print all even numbers from 2 to 20:
+
+2
+4
+6
+...
+20
+Exercise 4 — Sum
+
+Create a program that finds the sum of the numbers from 1 to 100.
+
+Expected result:
+
+5050
+
+Here, you will need a separate variable to store the sum.
+
+🟡 Level 2 — `while` + `input()`
+
+This is where things get more interesting. 😎
+
+Exercise 5 — Password
+
+Create a program that has a preset password:
+
+password = "python123"
+
+The user must enter the password.
+
+If it is correct → Access granted!
+If it is incorrect → ask for the password again.
+
+Example:
+
+Enter password: hello
+Wrong password!
+
+Enter password: 12345
+Wrong password!
+
+Enter password: python123
+Access granted!
+
+💡 The main idea is:
+
+"As long as the password isn't correct, keep asking."
+
+Exercise 6 — Numbers up to 0
+
+The user enters numbers.
+
+The program keeps asking:
+
+Enter number:
+
+Until the user enters 0.
+
+When 0 is entered:
+
+Program finished!
+
+Example:
+
+Enter number: 5
+Enter number: 8
+Enter number: 12
+Enter number: 3
+Enter number: 0
+
+Program finished!
+Exercise 7 — Summing Numbers
+
+Similar to the previous one, but this time the program must sum up all the entered numbers.
+
+It finishes and displays the sum when 0 is entered.
+
+Example:
+
+Enter number: 10
+Enter number: 5
+Enter number: 20
+Enter number: 0
+
+Total: 35
+
+Here you combine:
+
+while + input() + int() + a variable for the sum.
+
+🔴 Level 3 — A bit more thinking
+Exercise 8 — Guess the Number 🎯
+
+The computer has a secret number:
+
+secret_number = 7
+
+The user has to guess it.
+
+If they enter:
+
+a smaller number → Too low!
+a larger number → Too high!
+the correct one → Correct!
+
+Example:
+
+Guess: 3
+Too low!
+
+Guess: 10
+Too high! Guess: 7
+Correct!
+
+This exercise is very important because it combines:
+
+while + if/elif/else + input() + int()
+
+Exercise 9 — ATM Menu 🏦
+
+Create a simple ATM program.
+
+Initial balance:
+
+balance = 1000
+
+The menu should be displayed repeatedly until the user selects 4.
+
+===== ATM =====
+1. Check Balance
+2. Deposit
+3. Withdraw
+4. Exit
+
+Functions:
+
+1 → Check Balance
+
+Balance: 1000
+
+2 → Deposit
+
+Asks how much money to add.
+
+3 → Withdraw
+
+Asks how much money to withdraw.
+
+If there aren't enough funds:
+
+Insufficient balance!
+
+4 → Exit
+
+Goodbye!
+
+Here, you will use many of the concepts we've learned so far. 🔥
+
+🏆 Final Exercise — Mini Challenge
+Exercise 10 — Number Analyzer
+
+Create a program that accepts numbers until the user enters 0.
+
+Then, it displays:
+
+Total numbers: 5
+Sum: 37
+Positive numbers: 3
+Negative numbers: 2
+
+Example input:
+
+5
+-2
+10
+-3
+27
+0

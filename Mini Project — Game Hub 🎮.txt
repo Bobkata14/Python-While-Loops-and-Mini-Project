@@ -1,0 +1,128 @@
+Mini Project — Game Hub 🎮
+
+You will create a small Game Hub where the user can choose various actions from a menu.
+
+🎯 Main Goal
+
+The menu should keep appearing until the user selects "Exit".
+
+Example:
+
+========== GAME HUB ==========
+
+1. Play Guess the Number
+2. Show Game Statistics
+3. Add Points
+4. Exit
+
+Choose an option:
+🧩 Features
+1️⃣ Play Guess the Number
+
+The computer has:
+
+secret_number = 7
+
+The user must guess it.
+
+Example:
+
+Guess the number: 3
+Too low!
+
+Guess the number: 10
+Too high!
+
+Guess the number: 7
+Correct!
+
+After the correct answer, return to the main menu.
+
+💡 Use a separate `while` loop here that continues until the number is guessed.
+
+2️⃣ Show Game Statistics
+
+Displays statistics for the current game:
+
+========== STATISTICS ==========
+
+Attempts: 5
+Points: 30
+
+You need to decide for yourself which variables are required.
+
+💡 For example, you will need a counter that increments with each attempt.
+
+3️⃣ Add Points
+
+The user can add points:
+
+Enter points to add: 20
+
+Points added!
+Current points: 50
+
+Here, you will use something you have done before:
+
+points += ...
+4️⃣ Exit
+
+Upon selecting 4:
+
+Thanks for playing!
+Goodbye!
+
+And the program terminates.
+
+🧠 The Most Important Part
+
+I want you to come up with the structure yourself.
+
+I am not providing the finished code. Here is the logic flow:
+
+START
+↓
+Initialize variables
+↓
+Display the menu
+↓
+User makes a selection
+↓
+┌───────────────────────┐
+│ 1 → Guessing Game     │
+│ 2 → Statistics        │
+│ 3 → Add Points        │
+│ 4 → Exit              │
+└───────────────────────┘
+↓
+If NOT Exit
+↓
+Return to the menu
+
+This is exactly where you need to start thinking:
+
+"What condition should I set for the `while` loop so the menu keeps running until I choose Exit?"
+
+⭐ Extra Challenge
+
+Once you've built the basic version, add:
+
+Attempts
+
+For each guess:
+
+Attempts: 1
+Attempts: 2
+Attempts: 3
+...
+
+After a correct answer, the statistics should track the number of attempts.
+
+Points
+
+Create your own system:
+
+Guessing correctly → earn points
+More attempts → fewer points
+
+For example, you can come up with the rule yourself.
